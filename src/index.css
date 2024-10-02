@@ -1,0 +1,38 @@
+.Navbar{
+    width:200px;
+    height: 50px;
+    border-radius: 35%;
+}
+.navbar ul li:hover{
+    /* border-bottom: 2px solid white; */
+    scale: 1.05;
+    box-shadow:5px 5px 10px rgb(141, 98, 98);
+
+   
+}
+.backImage{
+    /* background-color: rgba(8, 8, 8, 0.692); */
+    background-image: url(https://png.pngtree.com/background/20230413/original/pngtree-business-e-shopping-picture-image_2422998.jpg);
+}
+/* .ride{
+    margin: auto;
+    margin-top: 70px;
+   height: 100vh;
+   width: 100w;
+} */
+ .image{
+    height: 500px;
+ }
+ .profile{
+    z-index: 1;
+     width: 1500px;
+    position: absolute;
+    left: -133px;
+    top:2px;
+    display: none;
+ }
+ .card:hover{
+    scale: 0.95;
+    box-shadow:5px 5px 10px rgb(141, 98, 98);
+ }
+ 
