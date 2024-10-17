@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .Navbar{
     width:200px;
     height: 50px;
@@ -36,3 +41,27 @@
     box-shadow:5px 5px 10px rgb(141, 98, 98);
  }
  
+
+ @media only screen and (max-width:350px){
+    .navImage{
+        display: none !important;
+    }
+    .navLogo{
+        width: 100px !important;
+        height: 100% !important;
+    }
+    .logo{
+        width: 100px !important;
+        height: 100% !important;
+    }
+   
+    
+ }
+ @media only screen and (max-width:600px){
+    .details {
+        text-align: center;
+    }
+    td.py-5.ban {
+        font-size: 12px;
+    }
+ }

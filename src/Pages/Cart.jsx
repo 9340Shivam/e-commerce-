@@ -110,7 +110,8 @@ const Cart = () => {
 
 
     return (
-        <div className='mt-5  '>
+       <div className='table table-responsive'> 
+         <div className='mt-5  '>
             <table className="table  container">
                 <thead>
                     <tr >
@@ -122,15 +123,15 @@ const Cart = () => {
                         <th className='m-auto' scope="col">Discount</th>
                         <th scope="col">RemoveItems</th>
                     </tr>
-                    <Link to="/" >Go to home -</Link>
+                    {/* <Link to="/" >Go to home -</Link> */}
                 </thead>
                 <tbody >
                     {
                         ctx.cartArr.map((ele, index) => {
                             return <tr className='' >
                                 <th className='py-5' scope="row">{index + 1}</th>
-                                <td >{<img src={ele.thumbnail} alt='' height={'150'} width={'150'} />}</td>
-                                <td className='py-5'>{ele.title}</td>
+                                <td className='vew'>{<img src={ele.thumbnail} alt='' height={'150'} width={'150'} />}</td>
+                                <td className='py-5 ban'>{ele.title}</td>
                                 <td className='py-5 '><button onClick={() => { handleDecrement(ele, index) }}>-</button>{ele.quantity}<button onClick={() => { handleIncrement(ele, index) }}> + </button></td>
                                 <td className='py-5'>{Math.ceil(ele.price)} $</td>
                                 <td className='py-5'>{Math.ceil(ele.discountPercentage)} %</td>
@@ -150,6 +151,8 @@ const Cart = () => {
                 </div>
             </div>
         </div>
+    
+       </div>
     )
 }
 

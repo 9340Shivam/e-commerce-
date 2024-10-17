@@ -10,11 +10,11 @@ const ViewDetails = () => {
   return (
     <div >
       <div className="row m-0 p-0 ">
-      <Link to="/" className=' mx-5'> - Go Back </Link>
+      {/* <Link to="/" className=' mx-5'> - Go Back </Link> */}
         <div className="col-md-6  d-flex justify-content-center ">
           <img src={product.thumbnail} alt="" />
         </div>
-        <div className="col-md-6 p-5 mt-4  rounded-5 ">
+        <div className="col-md-6 p-5 mt-4  rounded-5 details ">
           <h3><strong>Title : </strong>  {product.title}</h3>
           <h4 className='my-4'><strong>Brand : </strong>  {product.brand}</h4>
           <h5><strong>Category:</strong>  {product.category}</h5>

@@ -47,9 +47,9 @@ const Navbar = () => {
 
       <nav className="navbar navbar-expand-lg  fixed-top text-dark  bg-white ">
         <div className="container-fluid ">
-          {login === true &&<Link onClick={handleProfile} className="nav-link active text-dark fs-1" aria-current="page" to="#"><img src="https://i.imgur.com/bDLhJiP.jpg" style={{ width: '50px', height: '50px' }} className="rounded-circle" alt="" /></Link>}
+          {login === true &&<Link onClick={handleProfile} className="nav-link active text-dark fs-1 navImage" aria-current="page" to="#"><img src="https://i.imgur.com/bDLhJiP.jpg" style={{ width: '50px', height: '50px' }} className="rounded-circle" alt="" /></Link>}
 
-          <Link className="navbar-brand text-white mx-5" to="#"><img className='Navbar' src={logo} alt='snd' /></Link>
+          <Link className="navbar-brand text-white mx-5" to="#"><img className='Navbar navLogo' src={logo} alt='snd' /></Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
           </button>

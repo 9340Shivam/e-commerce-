@@ -7,20 +7,19 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <div>
-      {/* <!-- Remove the container if you want to extend the Footer to full width. --> */}
+     
 <div>
 
-  {/* Footer */}
+ 
   <footer className="text-center text-lg-start text-dark " style={{backgroundColor: 'white'}}>
-    {/* Section: Social media */}
+   
     <section className="d-flex justify-content-between p-4 text-bg-dark " style={{backgroundColor: '#6351ce'}}>
-      {/* Left */}
-      <div className="me-5">
-        <span>Get connected with us on social networks:</span>
+    
+      <div className="me-5  foot">
+        <span className='ss'>Get connected with us on social networks:</span>
       </div>
-      {/* Left */}
-      {/* Right */}
-      <div>
+     
+      {/* <div>
         <a href className="text-white me-4 text-dark">
           <i className="fab fa-facebook-f" />
         </a>
@@ -39,19 +38,18 @@ const Footer = () => {
         <a href className="text-white me-4">
           <i className="fab fa-github" />
         </a>
-      </div>
+      </div> */}
       {/* Right */}
     </section>
-    {/* Section: Social media */}
-    {/* Section: Links  */}
+  
     <section className>
       <div className="container text-center text-md-start mt-5">
-        {/* Grid row */}
+        
         <div className="row mt-3">
           {/* Grid column */}
           <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             {/* Content */}
-            <h6 className="text-uppercase fw-bold"><img src={logo}/></h6>
+            <h6 className="text-uppercase fw-bold"><img className='logo' src={logo}/></h6>
             <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{width: 60, backgroundColor: '#7c4dff', height: 2}} />
             <p>
               Here you can use rows and columns to organize your footer
